@@ -1,0 +1,57 @@
+<div class="section">
+    <mat-card>
+        <mat-card-title>
+            Math Is Fun
+        </mat-card-title>
+
+        <mat-card-subtitle>
+            Hi welcome to Math Is Fun. Pratice your maths skills today.
+        </mat-card-subtitle>
+
+
+        <mat-card-content>
+            <h3>Let Get Started</h3>
+            <form [formGroup]="form" (submit)="startGame()" class="form">
+
+                <mat-form-field>
+                    <mat-label>Name</mat-label>
+                    <input matInput formControlName="name" placeholder="name">
+                </mat-form-field>
+
+                <div class="form__control">
+                    <mat-label>Difficulty</mat-label>
+                    <mat-radio-group formControlName="difficulty" aria-label="difficulty">
+                        <mat-radio-button value="easy">Easy</mat-radio-button>
+                        <mat-radio-button value="medium">Medium</mat-radio-button>
+                        <mat-radio-button value="hard">Hard</mat-radio-button>
+                    </mat-radio-group>
+                </div>
+
+                <div class="form__control">
+                    <mat-label>Math Type</mat-label>
+                    <mat-radio-group formControlName="mathType" aria-label="mathType">
+                        <mat-radio-button value="all">All</mat-radio-button>
+                        <mat-radio-button value="addition">Addition</mat-radio-button>
+                        <mat-radio-button value="subtraction">Subtraction</mat-radio-button>
+                        <mat-radio-button value="multiplication">Multiplication</mat-radio-button>
+                        <mat-radio-button value="division">Division</mat-radio-button>
+                    </mat-radio-group>
+                </div>
+
+                <div class="form__control">
+                    <mat-label>Game Type</mat-label>
+                    <mat-radio-group formControlName="gameType" aria-label="gameType">
+                        <mat-radio-button value="timed">Timed</mat-radio-button>
+                        <mat-radio-button value="practise">Practise</mat-radio-button>
+                    </mat-radio-group>
+                </div>
+
+
+                <div class="form__control">
+                    <button type="submit" mat-raised-button color="primary">Start!</button>
+                </div>
+
+            </form>
+        </mat-card-content>
+    </mat-card>
+</div>

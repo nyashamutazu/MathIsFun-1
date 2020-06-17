@@ -1,0 +1,20 @@
+mat {
+  &-card {
+    margin-bottom: 50px;
+    margin-top: 50px;
+
+    .mat-divider, h4 {
+        margin-bottom: 10px;
+        padding-bottom: 10px;
+    }
+
+    strong {
+        margin-top: 10px;
+    }
+  }
+
+  &-panel-title {
+      font-weight: 500;
+      padding: 20px 0;
+  }
+}

@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,AAAA,QAAQ,CAAC;EACL,aAAa,EAAE,IAAI;EACnB,UAAU,EAAE,IAAI;CACnB",
+    "sources": [
+        "subtraction.component.scss"
+    ],
+    "names": [],
+    "file": "subtraction.component.css"
+}

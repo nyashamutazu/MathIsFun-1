@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAEK,AAAD,gBAAY,CAAC;EACb,QAAQ,EAAE,QAAQ;EAClB,MAAM,EAAE,IAAI;CACX;;AAEA,AAAD,WAAO,CAAC;EACJ,QAAQ,EAAE,QAAQ;EAClB,MAAM,EAAE,CAAC;EACT,KAAK,EAAE,CAAC;EACR,OAAO,EAAE,IAAI;CAChB;;AAGL,AAAA,aAAa,CAAC;EACV,OAAO,EAAE,IAAI;EACb,eAAe,EAAE,aAAa;EAC9B,KAAK,EAAE,IAAI;EACX,UAAU,EAAE,IAAI;CACnB",
+    "sources": [
+        "game.component.scss"
+    ],
+    "names": [],
+    "file": "game.component.css"
+}

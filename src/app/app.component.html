@@ -1,0 +1,59 @@
+<mat-drawer-container class="nav-container" autosize>
+  <mat-drawer #drawer class="nav-sidenav" mode="side">
+    <mat-toolbar class="mat-toolbar" color="primary">
+      <h1>Menu</h1>
+    </mat-toolbar>
+    <div class="drawer">
+
+      <div class="drawer__top">
+
+        <a routerLink="">Home</a>
+        <a routerLink="/about">About</a>
+        <!-- <a routerLink="/leader-board">Leader Board</a> -->
+
+        <div>
+          <a [matMenuTriggerFor]="menu">Lessons</a>
+          <mat-menu #menu="matMenu">
+            <a routerLink="/lessons/addition" mat-menu-item>Addition</a>
+            <a routerLink="/lessons/multiplication" mat-menu-item>Multiplication</a>
+            <a routerLink="/lessons/division" mat-menu-item>Division</a>
+            <a routerLink="/lessons/subtraction" mat-menu-item>Subtraction</a>
+          </mat-menu>
+        </div>
+
+      </div>
+
+      <div class="drawer__bottom">
+        <span>Created By <a href="https://nm-ltd.co.uk/">NM Ltd</a></span>
+        <!-- <a routerLink="/sign-up" mat-raised-button color="primary">Sign Up</a>
+        <a routerLink="/login" mat-raised-button color="primary">Login</a>
+        <a *ngIf="loggedIn" mat-raised-button color="warn">Logout</a> -->
+      </div>
+
+    </div>
+
+  </mat-drawer>
+
+  <div class="nav-sidenav-content">
+    <header>
+      <mat-toolbar class="mat-toolbar" color="primary">
+        <button mat-raised-button (click)="drawer.toggle()">
+          <div class="menu">
+            <div class="menu--1"></div>
+            <div class="menu--2"></div>
+            <div class="menu--3"></div>
+          </div>
+        </button>
+        <a routerLink="/" class="link-light">Math is Fun</a>
+      </mat-toolbar>
+    </header>
+
+    <main class="container">
+      <router-outlet></router-outlet>
+    </main>
+
+    <footer></footer>
+
+  </div>
+
+</mat-drawer-container>

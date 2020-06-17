@@ -1,0 +1,23 @@
+.game__container {
+  position: relative;
+  height: 100%;
+}
+
+.game__time {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  z-index: 1000;
+}
+
+.form__footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 100%;
+  margin-top: 80px;
+}
+/*# sourceMappingURL=game.component.css.map */

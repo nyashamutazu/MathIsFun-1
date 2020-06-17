@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,AAAA,KAAK,CAAC;EACF,KAAK,EAAE,IAAI;CACd;;AAED,AAAA,iBAAiB,CAAC;EACd,aAAa,EAAE,GAAG;CACrB",
+    "sources": [
+        "leaderboard.component.scss"
+    ],
+    "names": [],
+    "file": "leaderboard.component.css"
+}

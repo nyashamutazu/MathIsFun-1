@@ -1,0 +1,57 @@
+/* You can add global styles to this file, and also import other style files */
+/* You can add global styles to this file, and also import other style files */
+html,
+body {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  font-family: Roboto, "Helvetica Neue", sans-serif;
+}
+
+.section {
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+.form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.form__control {
+  margin: 10px 0;
+  padding: 0;
+}
+
+mat-card {
+  padding: 30px;
+  max-width: 580px;
+  margin: auto;
+}
+
+mat-radio-group {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-left: 16px;
+}
+
+mat-radio-button {
+  margin-bottom: 6px;
+}
+
+mat-radio-button:first-of-type {
+  margin-top: 10px;
+}
+/*# sourceMappingURL=styles.css.map */

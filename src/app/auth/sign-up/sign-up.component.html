@@ -1,0 +1,146 @@
+<mat-card>
+    <h1>Sign Up</h1>
+    <mat-tab-group>
+        <mat-tab label="Student">
+            <form [formGroup]="studentForm" (submit)="onSubmit()">
+                <mat-form-field>
+                    <input matInput type="text" formControlName="userName" placeholder="User Name">
+                    <mat-error *ngIf="studentForm.get('userName').invalid">Please enter a valid email</mat-error>
+                </mat-form-field>
+                <mat-form-field>
+                    <input matInput type="email" formControlName="email" placeholder="Email">
+                    <mat-error *ngIf="studentForm.get('email').invalid">Please enter a valid email</mat-error>
+                </mat-form-field>
+                <mat-form-field>
+                    <input matInput type="email" formControlName="confirmEmail" placeholder="Confirm Email">
+                    <mat-error *ngIf="studentForm.get('email').invalid">Please enter a valid email</mat-error>
+                </mat-form-field>
+                <mat-form-field>
+                    <input matInput type="password" formControlName="password" placeholder="Password">
+                    <mat-error *ngIf="studentForm.get('password').invalid">Please enter a valid password</mat-error>
+                </mat-form-field>
+                <mat-form-field>
+                    <input matInput type="password" formControlName="confirmPassword" placeholder="Confirm Password">
+                    <mat-error *ngIf="studentForm.get('confirmPassword').invalid">Please make sure your passwords match
+                    </mat-error>
+                </mat-form-field>
+                <div class="mat-form-field">
+                    <mat-checkbox class="example-margin" formControlName="checkbox">I am older than 13 years and agree
+                        to the Terms and Conditions</mat-checkbox>
+                        <br>
+
+     
+                    <!-- <mat-error *ngIf="!checked && studentForm.invalid">Please make sure your passwords match
+                    </mat-error> -->
+                </div>
+
+                <div class="mat-form-footer">
+                        <button mat-stroked-button type="button" (click)="openDialog()">Terms and Conditions</button><button mat-raised-button color="accent" type="submit">Login</button>
+
+                </div>
+
+            </form>
+
+
+        </mat-tab>
+        <mat-tab label="Parent">
+                <form [formGroup]="parentForm" (submit)="onSubmit()">
+                        <mat-form-field>
+                            <input matInput type="text" formControlName="userName" placeholder="User Name">
+                            <mat-error *ngIf="parentForm.get('userName').invalid">Please enter a valid email</mat-error>
+                        </mat-form-field>
+                        <mat-form-field>
+                            <input matInput type="email" formControlName="email" placeholder="Email">
+                            <mat-error *ngIf="parentForm.get('email').invalid">Please enter a valid email</mat-error>
+                        </mat-form-field>
+                        <mat-form-field>
+                            <input matInput type="email" formControlName="confirmEmail" placeholder="Confirm Email">
+                            <mat-error *ngIf="parentForm.get('email').invalid">Please enter a valid email</mat-error>
+                        </mat-form-field>
+                        <mat-form-field>
+                                <input matInput type="text" formControlName="schoolName" placeholder="School Name">
+                                <mat-error *ngIf="parentForm.get('schoolName').invalid">Please enter a school name</mat-error>
+                            </mat-form-field>
+                            <mat-form-field>
+                                    <input matInput type="text" formControlName="phoneNumber" placeholder="Phone Number">
+                                    <mat-error *ngIf="parentForm.get('phoneNumber').invalid">Please enter a phone number</mat-error>
+                                </mat-form-field>
+                        <mat-form-field>
+                            <input matInput type="password" formControlName="password" placeholder="Password">
+                            <mat-error *ngIf="parentForm.get('password').invalid">Please enter a valid password</mat-error>
+                        </mat-form-field>
+                        <mat-form-field>
+                            <input matInput type="password" formControlName="confirmPassword" placeholder="Confirm Password">
+                            <mat-error *ngIf="parentForm.get('confirmPassword').invalid">Please make sure your passwords match
+                            </mat-error>
+                        </mat-form-field>
+                        <div class="mat-form-field">
+                            <mat-checkbox class="example-margin" formControlName="checkbox">I am older than 18 years and agree
+                                to the Terms and Conditions</mat-checkbox>
+                                <br>
+        
+             
+                            <!-- <mat-error *ngIf="!checked && studentForm.invalid">Please make sure your passwords match
+                            </mat-error> -->
+                        </div>
+        
+                        <div class="mat-form-footer">
+                                <button mat-stroked-button type="button" (click)="openDialog()">Terms and Conditions</button><button mat-raised-button color="accent" type="submit">Login</button>
+        
+                        </div>
+        
+                    </form>
+        </mat-tab>
+        <mat-tab label="Teacher/ Tutor">
+            <form [formGroup]="tutorForm" (submit)="onSubmit()">
+                    <mat-form-field>
+                        <input matInput type="text" formControlName="userName" placeholder="User Name">
+                        <mat-error *ngIf="tutorForm.get('userName').invalid">Please enter a valid email</mat-error>
+                    </mat-form-field>
+                    <mat-form-field>
+                        <input matInput type="email" formControlName="email" placeholder="Official Email">
+                        <mat-error *ngIf="tutorForm.get('email').invalid">Please enter a valid email</mat-error>
+                    </mat-form-field>
+                    <mat-form-field>
+                        <input matInput type="email" formControlName="confirmEmail" placeholder="Confirm Official Email">
+                        <mat-error *ngIf="tutorForm.get('email').invalid">Please enter a valid email</mat-error>
+                    </mat-form-field>
+                    <mat-form-field>
+                            <input matInput type="text" formControlName="schoolName" placeholder="School Name">
+                            <mat-error *ngIf="tutorForm.get('schoolName').invalid">Please enter a school name</mat-error>
+                        </mat-form-field>
+                        <mat-form-field>
+                                <input matInput type="text" formControlName="phoneNumber" placeholder="Phone Number">
+                                <mat-error *ngIf="tutorForm.get('phoneNumber').invalid">Please enter a phone number</mat-error>
+                            </mat-form-field>
+                    <mat-form-field>
+                        <input matInput type="password" formControlName="password" placeholder="Password">
+                        <mat-error *ngIf="tutorForm.get('password').invalid">Please enter a valid password</mat-error>
+                    </mat-form-field>
+                    <mat-form-field>
+                        <input matInput type="password" formControlName="confirmPassword" placeholder="Confirm Password">
+                        <mat-error *ngIf="tutorForm.get('confirmPassword').invalid">Please make sure your passwords match
+                        </mat-error>
+                    </mat-form-field>
+                    <div class="mat-form-field">
+                        <mat-checkbox class="example-margin" formControlName="checkbox">I am older than 18 years and agree
+                            to the Terms and Conditions</mat-checkbox>
+                            <br>
+    
+         
+                        <!-- <mat-error *ngIf="!checked && studentForm.invalid">Please make sure your passwords match
+                        </mat-error> -->
+                    </div>
+    
+                    <div class="mat-form-footer">
+                            <button mat-stroked-button type="button" (click)="openDialog()">Terms and Conditions</button><button mat-raised-button color="accent" type="submit">Login</button>
+    
+                    </div>
+    
+                </form>
+        </mat-tab>
+    </mat-tab-group>
+
+    <mat-spinner *ngIf="isLoading"></mat-spinner>
+
+</mat-card>

@@ -1,0 +1,147 @@
+<div class="section">
+    <h1>Learn Basic Math Multiplication</h1>
+    <p>Adding a certain number of objects again and again is Multiplication. Multiplication means Counting by number.
+        Counting by 2's means 2, 4, 6, 8... and so on Similarly Counting by 5's means 5, 10, 15, 20...and so on
+    </p>
+
+    <mat-card>
+        <h2>Simple Examples</h2>
+        <mat-accordion>
+            <mat-expansion-panel (opened)="panelOpenState = true" (closed)="panelOpenState = false">
+                <mat-expansion-panel-header>
+                    <mat-panel-title>
+                        1. 4 x 4 = ?
+                    </mat-panel-title>
+                </mat-expansion-panel-header>
+                <h4>Explanation</h4>
+                <mat-divider></mat-divider>
+                <strong>4 + 4 + 4 + 4 = 4 × 4 = 16</strong>
+                <p>= 16</p>
+            </mat-expansion-panel>
+        </mat-accordion>
+
+        <br>
+
+        <mat-accordion>
+            <mat-expansion-panel (opened)="panelOpenState = true" (closed)="panelOpenState = false">
+                <mat-expansion-panel-header>
+                    <mat-panel-title>
+                        2. 42 x 2 = ?
+                    </mat-panel-title>
+                </mat-expansion-panel-header>
+                <h4>Explanation</h4>
+                <mat-divider></mat-divider>
+                <p>First arrange the multiplication vertically.</p>
+                <p>Now multiply the units digit 2 in 42 by 2.</p>
+                <p>Write the product 4 in the units place.
+                    Multiply the tens digit 4 in 42 by 2.
+                    Write the product 8 in the tens place.</p>
+                <p>= 84</p>
+            </mat-expansion-panel>
+        </mat-accordion>
+
+        <br>
+
+        <mat-accordion>
+            <mat-expansion-panel (opened)="panelOpenState = true" (closed)="panelOpenState = false">
+                <mat-expansion-panel-header>
+                    <mat-panel-title>
+                        3. If one book costs $ 222, what is the cost of 2 such notebooks?
+                    </mat-panel-title>
+                </mat-expansion-panel-header>
+                <h4>Explanation</h4>
+                <mat-divider></mat-divider>
+                <p>Number of books 2.
+                    To find out total cost of books multiply 222 with 2.
+                    First arrange the multiplication vertically.</p>
+                <p>Now multiply the units digit 2 in 222 by 2.
+                    Write the product 4 in the units place.
+                    Multiply the tens digit 2 in 222 by 2.
+                    Write the product 4 in the tens place.</p>
+
+                <p>Multiply the hundreds digit 2 in 222 by 2.
+                    Write the product 4 in the hundreds place.</p>
+                <p>= 444</p>
+            </mat-expansion-panel>
+        </mat-accordion>
+    </mat-card>
+
+    <mat-divider></mat-divider>
+
+    <mat-card>
+        <h2>Word Examples</h2>
+        <mat-accordion>
+            <mat-expansion-panel (opened)="panelOpenState = true" (closed)="panelOpenState = false">
+                <mat-expansion-panel-header>
+                    <mat-panel-title>
+                        1. Matt has 7 bags of marbles. Each bag contains 584 marbles. How many marbles does Matt have
+                        all together?
+                    </mat-panel-title>
+                </mat-expansion-panel-header>
+                <h4>Explanation</h4>
+                <mat-divider></mat-divider>
+                <strong>84 x 7</strong>
+                <p>Now multiply the units digit 4 in 84 by 7.
+                    The product is 28.
+                    Write the product 8 units from 28 in the units place.</p>
+                <p>Carry over the 2 tens from 28 to the tens column.
+                    Multiply the tens digit 8 in 84 by 7.
+                    The product is 56.</p>
+                <p>Write the product 8 tens from 58 in the tens place.
+                    Carry over the 5 hundreds from 58 to the hundreds column.
+                    Write 5 in the hundreds place.</p>
+                <p>= 588</p>
+            </mat-expansion-panel>
+        </mat-accordion>
+
+        <br>
+
+        <mat-accordion>
+            <mat-expansion-panel (opened)="panelOpenState = true" (closed)="panelOpenState = false">
+                <mat-expansion-panel-header>
+                    <mat-panel-title>
+                        2. If 57 trees are planted in each row, then how many such trees are there in 7 rows?
+                    </mat-panel-title>
+                </mat-expansion-panel-header>
+                <h4>Explanation</h4>
+                <mat-divider></mat-divider>
+                <p>Number of trees 57.
+                    To find out total number of trees multiply 57 with 7.</p>
+                <p>First arrange the multiplication vertically.
+                    Now multiply the units digit 7 in 57 by 7. The product is 49.
+                    Write the product 9 units from 49 in the units place.</p>
+                <p>
+                    Carry over the 4 tens from 49 to the tens column.
+                    Multiply the tens digit 5 in 57 by 7.
+                    The product is 35.
+                    Write the product 9 tens from 39 in the tens place.
+                    Carry over the 3 hundreds from 39 to the hundreds column.
+                    Write 3 in the hundreds place.
+                </p>
+                <p>= 399</p>
+            </mat-expansion-panel>
+        </mat-accordion>
+
+        <br>
+
+        <mat-accordion>
+            <mat-expansion-panel (opened)="panelOpenState = true" (closed)="panelOpenState = false">
+                <mat-expansion-panel-header>
+                    <mat-panel-title>
+                        3. A school has 340 boys and 250 girls. How many children are there in the school?
+                    </mat-panel-title>
+                </mat-expansion-panel-header>
+                <h4>Explanation</h4>
+                <mat-divider></mat-divider>
+                <p>340 + 250</p>
+                <p>= 590</p>
+            </mat-expansion-panel>
+        </mat-accordion>
+    </mat-card>
+
+    <br>
+
+    <mat-card>
+            <a mat-button color="primary" routerLink="">Try The Addition Game</a>
+    </mat-card>
+</div>

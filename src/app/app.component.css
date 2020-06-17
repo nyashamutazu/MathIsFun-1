@@ -1,0 +1,126 @@
+.mat-toolbar {
+  height: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-left: 50px;
+  padding-right: 50px;
+  width: 100%;
+}
+
+.mat-toolbar a {
+  color: #fff;
+  text-decoration: none;
+  text-transform: uppercase;
+  border: 2px solid #fff;
+  border-radius: 3px;
+  padding: 1px 6px;
+  -webkit-transition: all .3s;
+  transition: all .3s;
+}
+
+.mat-toolbar a:hover {
+  background: rgba(255, 255, 255, 0.25);
+}
+
+.drawer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  height: 100%;
+  padding: 20px 70px 30px 20px;
+}
+
+.drawer__top, .drawer__bottom {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 100%;
+}
+
+.drawer__top a, .drawer__bottom a {
+  text-decoration: none;
+  margin-bottom: 5px;
+  cursor: pointer;
+}
+
+.drawer__top a {
+  color: #000;
+}
+
+.drawer__top a:hover {
+  color: #230082;
+}
+
+.nav-container {
+  height: 100%;
+  width: 100%;
+}
+
+.nav-sidenav-content {
+  height: 100%;
+}
+
+.container {
+  padding: 50px;
+  max-width: 1280px;
+  margin: auto;
+}
+
+.menu {
+  padding: 8px;
+  margin: 10px 0;
+  position: relative;
+}
+
+.menu--1, .menu--2, .menu--3 {
+  content: '';
+  position: absolute;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  width: 35px;
+  height: 3px;
+  background: #222222;
+  border-radius: 20px;
+}
+
+.menu--1 {
+  top: 0;
+  left: 50%;
+}
+
+.menu--2 {
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+.menu--3 {
+  bottom: 0;
+  left: 50%;
+}
+/*# sourceMappingURL=app.component.css.map */
